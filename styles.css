@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #8A51FC;
+}
+
+.img-logo{
+    width: 300px;
+
+    /*img padrão é display inline e vamos colocar para display block para usar a
+    margin auto e linha ao centro*/
+    display: block;    
+    margin: 20px auto;
+}
+
+/*div, main e section já é display block*/
+main{
+    width: 375px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label{
+    color: #777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+select, input{
+    height: 48px;
+    width: 100%; /*ele vai até o pádding*/
+    border-radius: 4px;
+    border: 1px solid #BBB;
+    background: #FFF;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+
+    color: #555;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 5px;
+    background: #772FD3;
+    width: 100%;
+    border: none;
+    height: 48px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    margin-top: 36px;
+    padding: 12px;
+}
+
+.img-arrow{
+    margin: 15px 0;
+}
+
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency{
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.currency-value{
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+}
